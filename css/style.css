@@ -30,18 +30,21 @@
 
 /* Colores */
 :root {
-  --color-bgMenu: #464552;
+  --color-bgMenu: #464553;
   --color-bgBody: #b7d4e9;
   --color-linkAction: #fdfdfd;
   --color-link: #707070;
-  
 
+  /* Tamaños  */
+  --size-screen: 1366px
+  
 }
 
 /* ******************************** */
 
 html {
-  font-family: "monserratRegular";
+  font-family: "monserratRegular", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -52,7 +55,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1366px;
+  max-width: var(--size-screen);
   height: 100%;
   padding: 50px 100px;
 }
@@ -60,10 +63,26 @@ body {
 header {
   background-color: var(--color-bgMenu);
   display: flex;
+  padding: 50px 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a{
   color: var(--color-link);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+a:hover{
+  color: var(--color-linkAction);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.action{
+  color: var(--color-linkAction);
+  text-decoration: underline;
 }
 
 /* header {
@@ -90,22 +109,29 @@ main {
 } */
 
 .ecommerce {
+  display: flex;
+  gap: 1.25rem;
 }
 .ecommerce__carrita {
 }
 .ecommerce__lupa {
+  
 }
 .logo {
 }
 .logotipo {
+  font-family: "monserratBold";
 }
 .menu {
-}
-.menu__about-us {
-}
-.menu__contacts {
-}
-.menu__home {
-}
-.menu__products {
+  display: flex;
+  gap: 1.25rem;
+  & .menu__about-us {
+  }
+  & .menu__contacts {
+  }
+  & .menu__home {
+  }
+  & .menu__products {
+  }
+
 }
