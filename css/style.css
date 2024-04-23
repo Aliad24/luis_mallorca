@@ -7,13 +7,105 @@
 /* *********************************** */
 
 /* Tipografía */
+/* REGULAR */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "montserratRegular";
+  src: url("../font/montserrat-regular.woff2") format("woff2"),
+    url("../font/montserrat-regular.woff") format("woff");
+}
+/* BOLD */
+@font-face {
+  font-family: "montserratBold";
+  src: url("../font/montserrat-bold.woff2") format("woff2"),
+    url("../font/montserrat-bold.woff") format("woff");
+}
+/* ITALIC */
+@font-face {
+  font-family: "montserratItalic";
+  src: url("../font/montserrat-italic.woff2") format("woff2"),
+    url("../font/montserrat-italic.woff") format("woff");
 }
 
 /* ******************************** */
 
 /* Colores */
+:root {
+  --color-bgMenu: #464552;
+  --color-bgBody: #b7d4e9;
+  --color-linkAction: #fdfdfd;
+  --color-link: #707070;
+  
+
+}
 
 /* ******************************** */
+
+html {
+  font-family: "monserratRegular";
+}
+
+body {
+  background-color: var(--color-bgBody);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  height: 100%;
+  padding: 50px 100px;
+}
+
+header {
+  background-color: var(--color-bgMenu);
+  display: flex;
+}
+
+a{
+  color: var(--color-link);
+}
+
+/* header {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+
+  & .menu__navegacion a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+  }
+
+  & .logotipo {
+    color: white;
+    font-size: 40px;
+  }
+}
+
+main {
+  height: 80vh;
+} */
+
+.ecommerce {
+}
+.ecommerce__carrita {
+}
+.ecommerce__lupa {
+}
+.logo {
+}
+.logotipo {
+}
+.menu {
+}
+.menu__about-us {
+}
+.menu__contacts {
+}
+.menu__home {
+}
+.menu__products {
+}

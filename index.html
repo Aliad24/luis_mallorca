@@ -25,7 +25,8 @@
       name="twitter:image"
       content="URL de la imagen que quieres mostrar en Twitter"
     />
-
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
     <!-- icono de acceso para IOS -->
@@ -34,7 +35,7 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
@@ -43,17 +44,25 @@
     <script src="preloader.js"></script>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <!-- *** ESTRUCTURA SEMÁNTICA *** -->
       <!-- Header (encabezado de la página, zona superior) -->
       <header>
         <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
+        <a href="index.html" class="logo">
+          <h1 class="logotipo">KAUF</h1>
+        </a>
+        <nav class="menu">
+          <a class="menu__home">HOME</a>
+          <a href="product.html" class="menu__products">PRODUCTS</a>
+          <a href="aboutus.html" class="menu__about-us">ABOUT US</a>
+          <a href="contacts.html" class="menu__contacts">CONTACTS</a>
         </nav>
+        <!-- lupa y carrito -->
+        <section class="ecommerce">
+          <img class="ecommerce__lupa" src="svg/lupa.svg" alt="" />
+          <img class="ecommerce__carrita" src="svg/carrito_compra.svg" alt="" />
+        </section>
       </header>
       <!-- Main (centro de la página, zona central) -->
       <main>
@@ -64,6 +73,5 @@
         <h6>&copy;Copyright</h6>
       </footer>
     </div>
-
   </body>
 </html>
