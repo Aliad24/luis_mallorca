@@ -140,3 +140,18 @@ main {
   display: flex;
   
 }
+
+.footerDescription{
+  display: flex;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__tarjetas{
+  display: flex;
+  flex-direction: row;
+}
+
